@@ -2,8 +2,7 @@
   <header class="navbar" :class="{ scrolled, 'menu-open': menuOpen }">
     <div class="navbar-container container-large">
       <a href="#top" class="nav-brand" aria-label="Learniverse home" @click="closeMenu">
-        <BrandMark />
-        <span class="brand-name">Learniverse</span>
+        <img src="/public/learniverse-logo.png" alt="logo" />
       </a>
 
       <nav class="nav-menu" :class="{ open: menuOpen }" aria-label="Primary">

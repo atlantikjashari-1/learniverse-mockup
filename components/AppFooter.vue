@@ -3,8 +3,8 @@
     <div class="footer-container container-large">
       <div class="footer-brand">
         <a href="#top" class="nav-brand">
-          <BrandMark :size="26" />
-          <span class="brand-name">Learniverse</span>
+          <img src="/public/Learniverse-World-logo__white.png" alt="logo" width="190"
+          height="40" />
         </a>
         <p class="footer-tag">A clearer way to build skills, one guided path at a time.</p>
       </div>
