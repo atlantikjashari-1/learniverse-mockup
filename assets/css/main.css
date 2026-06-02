@@ -1,0 +1,244 @@
+/* =====================================================
+   Learniverse — global design system
+   Theme: luminous blue, editorial serif + clean sans
+   ===================================================== */
+
+:root {
+  /* Blue core palette */
+  --ink: #071330;          /* deepest navy */
+  --navy: #0a1f44;         /* hero / dark sections */
+  --navy-soft: #102a5c;
+  --blue: #2f6bff;         /* primary brand blue */
+  --blue-strong: #1d4ed8;
+  --blue-deep: #1742b8;
+  --sky: #38bdf8;          /* bright accent */
+  --azure: #60a5fa;
+  --accent: #ffb020;       /* warm spark, used sparingly */
+
+  /* Surfaces */
+  --bg: #f6f9ff;           /* page background */
+  --surface: #ffffff;
+  --surface-tint: #eef4ff;
+  --surface-2: #e6eeff;
+
+  /* Text */
+  --text: #0c1b38;
+  --text-soft: #44557a;
+  --text-mute: #6b7a9c;
+  --on-dark: #eaf1ff;
+  --on-dark-soft: #aebfe6;
+
+  /* Lines & effects */
+  --line: #dde6f7;
+  --line-strong: #c6d5f2;
+  --ring: rgba(47, 107, 255, 0.18);
+  --shadow-sm: 0 2px 8px rgba(13, 38, 92, 0.06);
+  --shadow-md: 0 14px 40px rgba(13, 38, 92, 0.10);
+  --shadow-lg: 0 30px 70px rgba(13, 38, 92, 0.16);
+  --shadow-blue: 0 16px 40px rgba(47, 107, 255, 0.28);
+
+  /* Type */
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+  /* Layout */
+  --maxw-large: 1200px;
+  --maxw-medium: 880px;
+  --pad-x: 48px;
+  --radius: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+  --section-gap: 104px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: var(--text);
+}
+
+p { margin: 0; }
+a { color: inherit; text-decoration: none; }
+ul { margin: 0; padding: 0; list-style: none; }
+img, svg { display: block; max-width: 100%; }
+button { font-family: inherit; cursor: pointer; }
+
+/* ---------- Layout helpers ---------- */
+.container-large {
+  width: 100%;
+  max-width: var(--maxw-large);
+  margin-inline: auto;
+  padding-inline: var(--pad-x);
+}
+.container-medium {
+  width: 100%;
+  max-width: var(--maxw-medium);
+  margin-inline: auto;
+  padding-inline: var(--pad-x);
+}
+
+section { position: relative; }
+
+/* ---------- Section headers ---------- */
+.kicker {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--blue-strong);
+  padding: 6px 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  margin-bottom: 18px;
+}
+.section-header {
+  max-width: 680px;
+  margin-inline: auto;
+  text-align: center;
+  margin-bottom: 56px;
+}
+.section-title {
+  font-size: clamp(1.9rem, 1.2rem + 2.6vw, 3.05rem);
+}
+.section-subtitle {
+  margin-top: 18px;
+  font-size: 1.1rem;
+  color: var(--text-soft);
+}
+.section-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 52px;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  --btn-pad-y: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1;
+  padding: var(--btn-pad-y) 26px;
+  border: 1.5px solid transparent;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: transform 0.22s cubic-bezier(.2,.8,.2,1),
+    box-shadow 0.22s ease, background 0.22s ease, color 0.22s ease, border-color 0.22s ease;
+  white-space: nowrap;
+}
+.btn-sm { --btn-pad-y: 12px; padding: 12px 20px; font-size: 0.94rem; }
+.btn-block { width: 100%; }
+
+.btn-primary {
+  color: #fff;
+  background: linear-gradient(135deg, var(--blue) 0%, var(--blue-strong) 100%);
+  box-shadow: var(--shadow-blue);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 48px rgba(47, 107, 255, 0.40);
+}
+
+.btn-secondary {
+  color: var(--blue-strong);
+  background: var(--surface);
+  border-color: var(--line-strong);
+}
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  border-color: var(--blue);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-soft {
+  color: var(--blue-strong);
+  background: var(--surface-tint);
+  border-color: transparent;
+}
+.btn-soft:hover {
+  background: var(--surface-2);
+  transform: translateY(-2px);
+}
+
+.btn-light {
+  color: var(--blue-strong);
+  background: #fff;
+}
+.btn-light:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+
+.btn-ghost {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+.btn-ghost:hover { background: rgba(255, 255, 255, 0.16); transform: translateY(-2px); }
+
+/* ---------- Reveal animation ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(.2,.7,.2,1), transform 0.7s cubic-bezier(.2,.7,.2,1);
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---------- Misc ---------- */
+.text-grad {
+  background: linear-gradient(110deg, var(--blue) 0%, var(--sky) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}
+
+/* ---------- Responsive layout tokens ---------- */
+@media (max-width: 1024px) {
+  :root { --section-gap: 84px; }
+}
+@media (max-width: 720px) {
+  :root { --pad-x: 22px; --section-gap: 64px; }
+  body { font-size: 16px; }
+  .section-header { margin-bottom: 40px; }
+}
