@@ -25,15 +25,15 @@
   padding: clamp(48px, 6vw, 80px) clamp(28px, 5vw, 72px);
   border-radius: var(--radius-lg);
   background:
-    radial-gradient(120% 140% at 50% 0%, var(--navy-soft) 0%, var(--navy) 45%, var(--ink) 100%);
-  box-shadow: var(--shadow-lg);
+    linear-gradient(135deg, var(--lv-brand-500) 0%, var(--lv-brand-600) 60%, var(--lv-brand-700) 100%);
+  box-shadow: 0 24px 60px rgba(14, 159, 166, 0.35);
 }
 .cta-glow {
   position: absolute;
-  top: -40%; left: 50%;
-  width: 70%; height: 120%;
+  top: -45%; left: 50%;
+  width: 75%; height: 120%;
   transform: translateX(-50%);
-  background: radial-gradient(circle, rgba(47, 107, 255, 0.55), transparent 60%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.35), transparent 60%);
   filter: blur(40px);
   pointer-events: none;
 }

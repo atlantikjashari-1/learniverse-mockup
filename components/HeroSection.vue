@@ -135,13 +135,13 @@ onMounted(() => {
   width: 8px; height: 8px;
   border-radius: 50%;
   background: var(--sky);
-  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.25);
+  box-shadow: 0 0 0 4px rgba(22, 189, 202, 0.25);
 }
 
 .hero-title {
   margin-top: 22px;
   font-size: clamp(2.5rem, 1.4rem + 4.4vw, 4.3rem);
-  font-weight: 600;
+  font-weight: 800;
 }
 .hero-subtitle {
   margin-top: 24px;
@@ -189,7 +189,7 @@ onMounted(() => {
   inset: -1px;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(160deg, rgba(47,107,255,0.5), transparent 40%);
+  background: linear-gradient(160deg, rgba(28,172,180,0.5), transparent 40%);
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -303,7 +303,7 @@ onMounted(() => {
 .pp-lessons li.active { color: var(--text); font-weight: 600; }
 .pp-lessons li.active .tick {
   border-color: var(--blue);
-  box-shadow: 0 0 0 4px rgba(47, 107, 255, 0.16);
+  box-shadow: 0 0 0 4px rgba(28, 172, 180, 0.16);
 }
 .pp-lessons li.active .tick::after {
   content: '';
@@ -342,7 +342,7 @@ onMounted(() => {
   width: 9px; height: 9px;
   border-radius: 50%;
   background: var(--accent);
-  box-shadow: 0 0 0 4px rgba(255, 176, 32, 0.22);
+  box-shadow: 0 0 0 4px rgba(22, 189, 202, 0.22);
 }
 
 @keyframes floaty {

@@ -62,7 +62,7 @@ const columns = [
 <style scoped>
 .footer {
   position: relative;
-  background: var(--ink);
+  background: linear-gradient(135deg, var(--lv-brand-900) 0%, var(--lv-brand-800) 55%, #013b40 100%);
   color: var(--on-dark-soft);
   padding-top: 64px;
 }

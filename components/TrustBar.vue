@@ -93,7 +93,7 @@ onMounted(() => {
 .trust-num {
   font-family: var(--font-display);
   font-size: clamp(1.7rem, 1.2rem + 1.4vw, 2.3rem);
-  font-weight: 600;
+  font-weight: 800;
   color: var(--blue-strong);
   line-height: 1;
   font-variant-numeric: tabular-nums;

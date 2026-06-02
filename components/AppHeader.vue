@@ -64,7 +64,7 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
   border-bottom: 1px solid transparent;
 }
 .navbar.scrolled {
-  background: rgba(246, 249, 255, 0.82);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: saturate(160%) blur(14px);
   -webkit-backdrop-filter: saturate(160%) blur(14px);
   border-bottom-color: var(--line);
@@ -160,7 +160,7 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
     left: 0; right: 0;
     margin: 0;
     padding: 18px var(--pad-x) 26px;
-    background: rgba(246, 249, 255, 0.97);
+    background: rgba(255, 255, 255, 0.97);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
     border-bottom: 1px solid var(--line);

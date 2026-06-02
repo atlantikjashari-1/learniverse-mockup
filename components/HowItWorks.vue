@@ -80,7 +80,7 @@ const steps = [
   margin-bottom: 18px;
   font-family: var(--font-display);
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #fff;
   background: linear-gradient(135deg, var(--blue), var(--blue-strong));
   border-radius: 50%;

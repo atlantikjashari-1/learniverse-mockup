@@ -4,42 +4,54 @@
    ===================================================== */
 
 :root {
-  /* Blue core palette */
-  --ink: #071330;          /* deepest navy */
-  --navy: #0a1f44;         /* hero / dark sections */
-  --navy-soft: #102a5c;
-  --blue: #2f6bff;         /* primary brand blue */
-  --blue-strong: #1d4ed8;
-  --blue-deep: #1742b8;
-  --sky: #38bdf8;          /* bright accent */
-  --azure: #60a5fa;
-  --accent: #ffb020;       /* warm spark, used sparingly */
+  /* Learniverse brand teal scale (from the live site) */
+  --lv-brand-50: #edfafa;
+  --lv-brand-100: #d5f5f6;
+  --lv-brand-200: #afecef;
+  --lv-brand-300: #7edce2;
+  --lv-brand-400: #16bdca;
+  --lv-brand-500: #1cacb4;   /* primary */
+  --lv-brand-600: #0e9fa6;
+  --lv-brand-700: #088689;
+  --lv-brand-800: #056065;
+  --lv-brand-900: #014d52;
+
+  /* Semantic aliases (names kept stable across the codebase) */
+  --ink: #0a1628;          /* deepest dark (footer / dark sections) */
+  --navy: #0c1a2e;         /* dark section base */
+  --navy-soft: #0e2233;
+  --blue: var(--lv-brand-500);     /* primary brand */
+  --blue-strong: var(--lv-brand-600);
+  --blue-deep: var(--lv-brand-700);
+  --sky: var(--lv-brand-400);      /* bright accent */
+  --azure: var(--lv-brand-300);
+  --accent: var(--lv-brand-400);   /* on-brand spark */
 
   /* Surfaces */
-  --bg: #f6f9ff;           /* page background */
+  --bg: #f9fafb;           /* page background (gray-50) */
   --surface: #ffffff;
-  --surface-tint: #eef4ff;
-  --surface-2: #e6eeff;
+  --surface-tint: var(--lv-brand-50);
+  --surface-2: var(--lv-brand-100);
 
-  /* Text */
-  --text: #0c1b38;
-  --text-soft: #44557a;
-  --text-mute: #6b7a9c;
-  --on-dark: #eaf1ff;
-  --on-dark-soft: #aebfe6;
+  /* Text (gray scale from brand) */
+  --text: #111827;         /* gray-900 */
+  --text-soft: #4b5563;    /* gray-600 */
+  --text-mute: #6b7280;    /* gray-500 */
+  --on-dark: #ffffff;
+  --on-dark-soft: rgba(255, 255, 255, 0.72);
 
   /* Lines & effects */
-  --line: #dde6f7;
-  --line-strong: #c6d5f2;
-  --ring: rgba(47, 107, 255, 0.18);
-  --shadow-sm: 0 2px 8px rgba(13, 38, 92, 0.06);
-  --shadow-md: 0 14px 40px rgba(13, 38, 92, 0.10);
-  --shadow-lg: 0 30px 70px rgba(13, 38, 92, 0.16);
-  --shadow-blue: 0 16px 40px rgba(47, 107, 255, 0.28);
+  --line: #e5e7eb;         /* gray-200 */
+  --line-strong: #d1d5db;  /* gray-300 */
+  --ring: rgba(28, 172, 180, 0.18);
+  --shadow-sm: 0 2px 8px rgba(17, 24, 39, 0.06);
+  --shadow-md: 0 4px 24px rgba(17, 24, 39, 0.10);
+  --shadow-lg: 0 24px 60px rgba(17, 24, 39, 0.16);
+  --shadow-blue: 0 10px 30px rgba(28, 172, 180, 0.30);
 
-  /* Type */
-  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
-  --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+  /* Type — matches the live site */
+  --font-display: 'Manrope', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
 
   /* Layout */
   --maxw-large: 1200px;
@@ -77,9 +89,9 @@ body {
 
 h1, h2, h3, h4 {
   font-family: var(--font-display);
-  font-weight: 600;
-  line-height: 1.08;
-  letter-spacing: -0.01em;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
   margin: 0;
   color: var(--text);
 }
@@ -170,7 +182,7 @@ section { position: relative; }
 }
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 22px 48px rgba(47, 107, 255, 0.40);
+  box-shadow: 0 16px 36px rgba(28, 172, 180, 0.40);
 }
 
 .btn-secondary {

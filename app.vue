@@ -53,24 +53,24 @@
 .glow-1 {
   width: 620px; height: 620px;
   top: -240px; left: -160px;
-  background: radial-gradient(circle, rgba(47, 107, 255, 0.40), transparent 70%);
+  background: radial-gradient(circle, rgba(28, 172, 180, 0.34), transparent 70%);
 }
 .glow-2 {
   width: 520px; height: 520px;
   top: 18%; right: -200px;
-  background: radial-gradient(circle, rgba(56, 189, 248, 0.30), transparent 70%);
+  background: radial-gradient(circle, rgba(22, 189, 202, 0.26), transparent 70%);
 }
 .glow-3 {
   width: 560px; height: 560px;
   bottom: -220px; left: 30%;
-  background: radial-gradient(circle, rgba(96, 165, 250, 0.22), transparent 70%);
+  background: radial-gradient(circle, rgba(126, 220, 226, 0.22), transparent 70%);
 }
 .grid-overlay {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(47, 107, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(47, 107, 255, 0.05) 1px, transparent 1px);
+    linear-gradient(rgba(28, 172, 180, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(28, 172, 180, 0.05) 1px, transparent 1px);
   background-size: 56px 56px;
   mask-image: radial-gradient(ellipse 80% 50% at 50% 0%, #000 30%, transparent 75%);
   -webkit-mask-image: radial-gradient(ellipse 80% 50% at 50% 0%, #000 30%, transparent 75%);

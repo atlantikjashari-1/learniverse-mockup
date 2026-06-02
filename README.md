@@ -1,14 +1,15 @@
 # Learniverse — Landing Page
 
 A marketing landing page for **Learniverse**, a guided learning-path platform, built with
-**Nuxt 3 + Vue 3** and a luminous **blue** theme. Content is based on the project brief
+**Nuxt 3 + Vue 3**. Colors and fonts match the live Learniverse brand: a **teal** palette
+(`#1cacb4`) with **Manrope** + **Inter**. Content is based on the project brief
 (homepage structure + copy blocks).
 
 ## Tech
 
 - **Nuxt 3** (SSR) / **Vue 3** `<script setup>`
 - Plain CSS design system with tokens (`assets/css/main.css`) — no UI framework
-- Fonts: **Fraunces** (display) + **Plus Jakarta Sans** (body) via Google Fonts
+- Fonts: **Manrope** (headings) + **Inter** (body) via Google Fonts
 - Custom `v-reveal` scroll-reveal directive (`plugins/reveal.ts`)
 
 ## Sections (homepage structure from the brief)
@@ -53,7 +54,9 @@ components/
   BrandMark.vue         # logo mark
 ```
 
-## Customising the blue theme
+## Customising the theme
 
-All colors live as CSS variables in `assets/css/main.css` under `:root` — adjust
-`--blue`, `--blue-strong`, `--sky`, `--navy`, etc. to retune the palette.
+All colors live as CSS variables in `assets/css/main.css` under `:root`. The brand teal
+scale is `--lv-brand-50 … --lv-brand-900` (the source of truth, taken from the live site);
+semantic aliases (`--blue`, `--sky`, `--navy`, etc.) point at it, so retune the brand scale
+once and the whole site follows.

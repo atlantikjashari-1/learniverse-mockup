@@ -17,14 +17,14 @@ export default defineNuxtConfig({
           content:
             'Learniverse helps students, job seekers, and career switchers build practical skills through guided learning paths that make it easier to know what to learn next.'
         },
-        { name: 'theme-color', content: '#0a1f44' }
+        { name: 'theme-color', content: '#1cacb4' }
       ],
       link: [
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap'
+          href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap'
         }
       ]
     }

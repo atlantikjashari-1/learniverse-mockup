@@ -39,22 +39,22 @@ const testimonials = [
     quote: 'Learniverse helped me stop jumping between random courses. I finally had a clear path and could actually see my progress.',
     name: 'Amara K.',
     role: 'Student',
-    a: '#2f6bff',
-    b: '#38bdf8'
+    a: '#1cacb4',
+    b: '#16bdca'
   },
   {
     quote: 'I wanted to build new skills without feeling lost. The structure made it much easier to stay motivated.',
     name: 'Daniel R.',
     role: 'Career Switcher',
-    a: '#1d4ed8',
-    b: '#7c9bff'
+    a: '#0e9fa6',
+    b: '#7edce2'
   },
   {
     quote: 'What I liked most was knowing exactly what to do next. It made learning feel achievable again.',
     name: 'Mei L.',
     role: 'Job Seeker',
-    a: '#0ea5e9',
-    b: '#60a5fa'
+    a: '#088689',
+    b: '#16bdca'
   }
 ]
 </script>
