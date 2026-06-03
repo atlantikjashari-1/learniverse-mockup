@@ -3,8 +3,13 @@
     <div class="container-large">
       <div class="section-header" v-reveal>
         <span class="kicker">Success stories</span>
-        <h2 class="section-title">Learning feels easier when you can see what's possible</h2>
-        <p class="section-subtitle">Hear from learners who used Learniverse to stay focused, build confidence, and keep moving forward.</p>
+        <h2 class="section-title">
+          Learning feels easier when you can see what's possible
+        </h2>
+        <p class="section-subtitle">
+          Hear from learners who used Learniverse to stay focused, build
+          confidence, and keep moving forward.
+        </p>
       </div>
 
       <div class="testimonials-grid">
@@ -17,7 +22,9 @@
           <span class="quote-mark">&ldquo;</span>
           <blockquote>{{ t.quote }}</blockquote>
           <figcaption>
-            <span class="avatar" :style="{ '--a': t.a, '--b': t.b }">{{ t.name.charAt(0) }}</span>
+            <span class="avatar" :style="{ '--a': t.a, '--b': t.b }">{{
+              t.name.charAt(0)
+            }}</span>
             <span class="t-meta">
               <strong>{{ t.name }}</strong>
               <span>{{ t.role }}</span>
@@ -36,31 +43,36 @@
 <script setup lang="ts">
 const testimonials = [
   {
-    quote: 'Learniverse helped me stop jumping between random courses. I finally had a clear path and could actually see my progress.',
-    name: 'Amara K.',
-    role: 'Student',
-    a: '#1cacb4',
-    b: '#16bdca'
+    quote:
+      "Learniverse helped me stop jumping between random courses. I finally had a clear path and could actually see my progress.",
+    name: "Amara K.",
+    role: "Student",
+    a: "#1cacb4",
+    b: "#16bdca",
   },
   {
-    quote: 'I wanted to build new skills without feeling lost. The structure made it much easier to stay motivated.',
-    name: 'Daniel R.',
-    role: 'Career Switcher',
-    a: '#0e9fa6',
-    b: '#7edce2'
+    quote:
+      "I wanted to build new skills without feeling lost. The structure made it much easier to stay motivated.",
+    name: "Daniel R.",
+    role: "Career Switcher",
+    a: "#0e9fa6",
+    b: "#7edce2",
   },
   {
-    quote: 'What I liked most was knowing exactly what to do next. It made learning feel achievable again.',
-    name: 'Mei L.',
-    role: 'Job Seeker',
-    a: '#088689',
-    b: '#16bdca'
-  }
-]
+    quote:
+      "What I liked most was knowing exactly what to do next. It made learning feel achievable again.",
+    name: "Mei L.",
+    role: "Job Seeker",
+    a: "#088689",
+    b: "#16bdca",
+  },
+];
 </script>
 
 <style scoped>
-.section-testimonials { padding-bottom: var(--section-gap); }
+.section-testimonials {
+  padding-bottom: var(--section-gap);
+}
 
 .testimonials-grid {
   display: grid;
@@ -78,9 +90,11 @@ const testimonials = [
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-.testimonial-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
 
 .quote-mark {
   font-family: var(--font-display);
@@ -109,7 +123,8 @@ figcaption {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 46px; height: 46px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
   font-family: var(--font-display);
   font-weight: 600;
@@ -117,11 +132,24 @@ figcaption {
   color: #fff;
   background: linear-gradient(135deg, var(--a), var(--b));
 }
-.t-meta { display: flex; flex-direction: column; }
-.t-meta strong { font-weight: 700; color: var(--text); }
-.t-meta span { font-size: 0.88rem; color: var(--text-mute); }
+.t-meta {
+  display: flex;
+  flex-direction: column;
+}
+.t-meta strong {
+  font-weight: 700;
+  color: var(--text);
+}
+.t-meta span {
+  font-size: 0.88rem;
+  color: var(--text-mute);
+}
 
 @media (max-width: 920px) {
-  .testimonials-grid { grid-template-columns: 1fr; max-width: 540px; margin-inline: auto; }
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    max-width: 540px;
+    margin-inline: auto;
+  }
 }
 </style>

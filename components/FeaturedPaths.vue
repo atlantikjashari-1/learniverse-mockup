@@ -4,7 +4,10 @@
       <div class="section-header" v-reveal>
         <span class="kicker">Featured paths</span>
         <h2 class="section-title">Start with a path, not a pile of content</h2>
-        <p class="section-subtitle">Explore structured learning paths designed to help you make useful progress with less overwhelm.</p>
+        <p class="section-subtitle">
+          Explore structured learning paths designed to help you make useful
+          progress with less overwhelm.
+        </p>
       </div>
 
       <div class="paths-grid">
@@ -40,31 +43,45 @@
 <script setup lang="ts">
 const paths = [
   {
-    category: 'Digital Skills',
-    meta: 'Beginner • 4 weeks',
-    title: 'Digital Skills Foundations',
-    body: 'Build essential digital skills you can use in study, work, and everyday life.',
-    learn: ['Core digital tools', 'Online collaboration basics', 'Task and file organization']
+    category: "Digital Skills",
+    meta: "Beginner • 4 weeks",
+    title: "Digital Skills Foundations",
+    body: "Build essential digital skills you can use in study, work, and everyday life.",
+    learn: [
+      "Core digital tools",
+      "Online collaboration basics",
+      "Task and file organization",
+    ],
   },
   {
-    category: 'Professional Skills',
-    meta: 'Beginner • 3 weeks',
-    title: 'Communication for Work',
-    body: 'Improve how you write, speak, and communicate in professional settings.',
-    learn: ['Clear email writing', 'Presentation basics', 'Workplace communication']
+    category: "Professional Skills",
+    meta: "Beginner • 3 weeks",
+    title: "Communication for Work",
+    body: "Improve how you write, speak, and communicate in professional settings.",
+    learn: [
+      "Clear email writing",
+      "Presentation basics",
+      "Workplace communication",
+    ],
   },
   {
-    category: 'Career Growth',
-    meta: 'Beginner • 5 weeks',
-    title: 'Career Switch Starter',
-    body: 'Build a clear starting point for moving into a new field.',
-    learn: ['Identifying transferable skills', 'Building a learning plan', 'Gaining confidence for your next step']
-  }
-]
+    category: "Career Growth",
+    meta: "Beginner • 5 weeks",
+    title: "Career Switch Starter",
+    body: "Build a clear starting point for moving into a new field.",
+    learn: [
+      "Identifying transferable skills",
+      "Building a learning plan",
+      "Gaining confidence for your next step",
+    ],
+  },
+];
 </script>
 
 <style scoped>
-.section-paths { padding-bottom: var(--section-gap); }
+.section-paths {
+  padding-bottom: var(--section-gap);
+}
 
 .paths-grid {
   display: grid;
@@ -81,7 +98,6 @@ const paths = [
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
-  transition: transform 0.25s cubic-bezier(.2,.8,.2,1), box-shadow 0.25s ease, border-color 0.25s ease;
 }
 .path-card:hover {
   transform: translateY(-6px);
@@ -111,8 +127,13 @@ const paths = [
   font-weight: 600;
 }
 
-.path-card h3 { font-size: 1.4rem; }
-.path-card > p { color: var(--text-soft); font-size: 0.98rem; }
+.path-card h3 {
+  font-size: 1.4rem;
+}
+.path-card > p {
+  color: var(--text-soft);
+  font-size: 0.98rem;
+}
 
 .path-learn {
   padding-top: 16px;
@@ -129,7 +150,11 @@ const paths = [
   color: var(--text-mute);
   margin-bottom: 12px;
 }
-.path-learn ul { display: flex; flex-direction: column; gap: 9px; }
+.path-learn ul {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
 .path-learn li {
   position: relative;
   padding-left: 26px;
@@ -138,26 +163,36 @@ const paths = [
   font-weight: 500;
 }
 .path-learn li::before {
-  content: '';
+  content: "";
   position: absolute;
-  left: 0; top: 7px;
-  width: 14px; height: 14px;
+  left: 0;
+  top: 7px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   background: var(--surface-tint);
 }
 .path-learn li::after {
-  content: '';
+  content: "";
   position: absolute;
-  left: 5px; top: 10px;
-  width: 4px; height: 7px;
+  left: 5px;
+  top: 10px;
+  width: 4px;
+  height: 7px;
   border: solid var(--blue);
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
 
-.path-card .btn { margin-top: 6px; }
+.path-card .btn {
+  margin-top: 6px;
+}
 
 @media (max-width: 920px) {
-  .paths-grid { grid-template-columns: 1fr; max-width: 480px; margin-inline: auto; }
+  .paths-grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin-inline: auto;
+  }
 }
 </style>
